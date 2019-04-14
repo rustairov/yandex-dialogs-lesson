@@ -1,0 +1,8 @@
+{
+  "1x":   { "width": 388,  "height": 172 },
+  "1.5x": { "width": 582,  "height": 258 },
+  "2x":   { "width": 776,  "height": 344 },
+  "3x":   { "width": 1164, "height": 516 },
+  "3.5x": { "width": 1358, "height": 602 },
+  "4x":   { "width": 1552, "height": 688 }
+}

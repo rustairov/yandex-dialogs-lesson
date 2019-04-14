@@ -1,0 +1,18 @@
+{
+  "name": "yandex-dialogs-lesson",
+  "version": "1.0.0",
+  "scripts": {
+    "resize_images": "node --experimental-modules ./src/resize_images.mjs",
+    "upload_images": "node --experimental-modules ./src/upload_images.mjs",
+    "web_image": "node --experimental-modules src/web_image.mjs"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "jimp": "^0.6.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}

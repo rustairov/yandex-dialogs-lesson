@@ -1,0 +1,16 @@
+.DS_Store
+package-lock.json
+node_modules
+src/configs/dialogs.json
+
+# Log files
+npm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
