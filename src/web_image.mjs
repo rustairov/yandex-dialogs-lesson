@@ -1,7 +1,6 @@
 import path from 'path';
 import request from 'request-promise';
 import jimp from 'jimp';
-
 import dialogs_config from './configs/dialogs';
 import sizes from './configs/sizes';
 

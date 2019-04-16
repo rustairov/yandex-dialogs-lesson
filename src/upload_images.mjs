@@ -12,9 +12,7 @@ import dialogs_config from './configs/dialogs';
 
     for (let image_name of images) {
 
-        const buffer = fs.readFileSync(`${result_dir}/${image_name}`)
-            , parsed_name = path.parse(image_name)
-        ;
+        const buffer = fs.readFileSync(`${result_dir}/${image_name}`);
 
         let result = await request.post({
             url: `https://dialogs.yandex.net/api/v1/skills/${dialogs_config.skill_id}/images`,
@@ -25,14 +23,14 @@ import dialogs_config from './configs/dialogs';
                 file: {
                     value: buffer,
                     options: {
-                        filename: parsed_name.base
+                        filename: image_name
                     }
                 }
             },
             json: true
         });
 
-        console.log({ [parsed_name.base]: result });
+        console.log({ [image_name]: result });
     }
 
 })();
